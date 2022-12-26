@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Esri.ArcGISRuntime.WPF" Version="200.0.0" />
+    <PackageReference Include="Esri.ArcGISRuntime.Hydrography" Version="200.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="..\SampleData\GB5X01NE.000">
+      <Link>SampleData\GB5X01NE.000</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\SampleData\GB5X01NW.000">
+      <Link>SampleData\GB5X01NW.000</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\SampleData\GB5X01SE.000">
+      <Link>SampleData\GB5X01SE.000</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\SampleData\GB5X01SW.000">
+      <Link>SampleData\GB5X01SW.000</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

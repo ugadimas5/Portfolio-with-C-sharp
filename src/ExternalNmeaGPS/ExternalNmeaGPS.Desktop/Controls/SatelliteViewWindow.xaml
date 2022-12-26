@@ -1,0 +1,10 @@
+﻿<Window x:Class="ExternalNmeaGPS.Controls.SatelliteViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ctrls="clr-namespace:ExternalNmeaGPS.Controls"
+		Title="GPS Satellite View" Height="300" Width="300">
+    <Grid>
+		<ctrls:SatelliteView MaxWidth="{Binding ActualHeight, ElementName=satView}"
+				Grid.Column="1" x:Name="satView" />
+	</Grid>
+</Window>
